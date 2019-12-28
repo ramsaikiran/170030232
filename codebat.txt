@@ -1,0 +1,68 @@
+1)
+public String doubleChar(String str) {
+  String st="";
+  int i;
+  for(i=0;i<str.length();i++)
+  {
+    st=st+str.charAt(i)+str.charAt(i);
+  }
+  return st;
+}
+2)
+public int countHi(String str) {
+  int count=0,i;
+  for(i=0;i<str.length()-1;i++)
+  {
+    if(str.charAt(i)=='h' && str.charAt(i+1)=='i') 
+    count++;
+  }
+  return count;
+}
+3)
+public boolean catDog(String str) {
+  int c1=0,c2=0,i;
+  for(i=0;i<str.length()-2;i++)
+  {
+    String s=str.substring(i,i+3);
+    if(s.compareTo("cat")==0)
+    c1++;
+    if(s.compareTo("dog")==0)
+    c2++;
+  }
+  if(c1==c2)
+  return true;
+  else
+  return false;
+}
+4)
+public int countCode(String str) {
+int i,c=0;
+for(i=0;i<str.length()-3;i++)
+{
+  if(str.charAt(i)=='c' && str.charAt(i+1)=='o' && str.charAt(i+3)=='e')
+  c++;
+}
+return c;
+}
+5)
+for(i=0;i<str.length()-2;i++)
+  {
+    String s=str.substring(i,i+3);
+    if(s.compareTo("cat")==0)
+    c1++;
+    if(s.compareTo("dog")==0)
+    c2++;
+  }
+6)
+public boolean bobThere(String str) {
+  int i,c=0;
+for(i=0;i<str.length()-2;i++)
+{
+  if(str.charAt(i)=='b' && str.charAt(i+2)=='b')
+  c++;
+}
+if(c>=1)
+return true;
+else
+return false;
+}
